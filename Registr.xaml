@@ -1,0 +1,69 @@
+﻿<Window x:Class="Prilozenie_PP.Registr"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Prilozenie_PP"
+        mc:Ignorable="d"
+        Title="Registr" Height="800" Width="800" WindowStyle="None">
+    <Grid>
+        <Label Background="Pink" Margin="-9,-8,711,768"></Label>
+        <Label Background="PaleVioletRed" Margin="70,-8,632,768"></Label>
+        <Label Background="BlueViolet" Margin="149,-8,553,768"></Label>
+        <Label Background="Violet" Margin="229,-8,473,768"></Label>
+        <Label Background="Pink" Margin="310,-8,392,768"/>
+        <Label Background="PaleVioletRed" Margin="388,-8,314,768"/>
+        <Label Background="BlueViolet" Margin="468,-8,234,768"/>
+        <Label Background="Violet" Margin="548,-8,154,768"/>
+        <Label Background="PaleVioletRed" Margin="622,-8,80,768"/>
+        <Label Background="BlueViolet" Margin="702,-8,0,768"/>
+
+        <Label Margin="229,29,285,708" Content="Регистрация" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" FontStyle="Italic"></Label>
+        <Label Margin="22,515,674,229" Content="Логин" FontSize="25"  HorizontalAlignment="Center" VerticalAlignment="Center" Width="96" Height="48" />
+        <Label Margin="22,468,582,282" Content="Придумайте :" FontSize="25"  HorizontalAlignment="Center" VerticalAlignment="Center" Width="188" Height="42" FontWeight="Bold" />
+        <TextBox x:Name="Login" Margin="166,515,342,229"  FontSize="18"/>
+        <TextBox x:Name="Login_Copy" Margin="166,568,342,180"  FontSize="18"/>
+        <Label Margin="22,568,674,180" Content="Пароль" FontSize="25"  HorizontalAlignment="Center" VerticalAlignment="Center" Width="96" Height="44" RenderTransformOrigin="0.521,-0.833" />
+
+        <Button Margin="553,338,80,410" Content="Изменить"></Button>
+        
+        <Label Margin="22,142,674,606" Content="Имя" FontSize="25"  HorizontalAlignment="Center" VerticalAlignment="Center" Width="96" Height="44" />
+        <Label Margin="22,84,478,664" Content="Введите свои данные :" FontSize="25"  HorizontalAlignment="Center" VerticalAlignment="Center" Width="292" Height="44" FontWeight="Bold" />
+        <TextBox x:Name="Name" Margin="166,142,342,606"  FontSize="18"/>
+        <TextBox x:Name="newLastName" Margin="166,190,342,558"  FontSize="18"/>
+        <Label Margin="22,190,644,558" Content="Фамилия" FontSize="25"  HorizontalAlignment="Center" VerticalAlignment="Center" Width="126" Height="44" />
+        <TextBox x:Name="Otchestvo" Margin="166,240,342,508"  FontSize="18"/>
+        <Label Margin="22,240,644,508" Content="Очество" FontSize="25"  HorizontalAlignment="Center" VerticalAlignment="Center" Width="126" Height="44" />
+        <TextBox x:Name="Дацупцуп" Margin="221,387,342,361"  FontSize="18"/>
+        <Label Margin="22,387,576,361" Content="Дата рождения" FontSize="25"  HorizontalAlignment="Center" VerticalAlignment="Center" Width="194" Height="44" />
+        <TextBox x:Name="Login_Copy5" Margin="166,288,478,460" Text="Допили еблан" FontSize="20"/>
+        <Label Margin="22,288,644,460" Content="Пол" FontSize="25"  HorizontalAlignment="Center" VerticalAlignment="Center" Width="126" Height="44" />
+        <TextBox x:Name="mail" Margin="166,338,342,410"  FontSize="18"/>
+        <Label Margin="22,338,644,410" Content="Почта" FontSize="25"  HorizontalAlignment="Center" VerticalAlignment="Center" Width="126" Height="44" />
+
+        <Button Margin="275,635,104,109" Background="White" BorderBrush="White" Click="Button_Click"  ></Button>
+        <CheckBox x:Name="Obrabotka" Margin="55,656,711,109"  ></CheckBox>
+        <Border Margin="84,617,123,90" >
+            <TextBlock TextWrapping="Wrap"    Height="48" Margin="10,27,10,10" >
+    <Run FontSize="22" Foreground="Black" FontWeight="Bold" > Даю согласие на  </Run>
+    <Run FontSize="22" Foreground="CadetBlue" FontWeight="Bold" FontStyle="Italic" >  обработку персональных данных</Run>
+            </TextBlock>
+        </Border>
+
+
+        <Button x:Name="ExitBack" Margin="548,707,62,26" Content="Вернуться" FontSize="20" Click="Exit_Click" />
+        <Button x:Name="ExitBack1" Margin="84,707,526,26" Content="Регистрация" FontSize="20" Click="Exit_Click" Background="CadetBlue" Foreground="White" />
+        <Label Background="Pink" Margin="-9,452,711,328"/>
+        <Label Background="PaleVioletRed" Margin="70,452,632,328"/>
+        <Label Background="BlueViolet" Margin="149,452,553,328"/>
+        <Label Background="Violet" Margin="229,452,473,328"/>
+        <Label Background="Pink" Margin="310,452,392,328"/>
+        <Label Background="PaleVioletRed" Margin="388,452,314,328"/>
+        <Label Background="BlueViolet" Margin="468,452,234,328"/>
+        <Label Background="Violet" Margin="548,452,154,328"/>
+        <Label Background="PaleVioletRed" Margin="622,452,80,328"/>
+        <Label Background="BlueViolet" Margin="702,452,0,328"/>
+
+
+    </Grid>
+</Window>

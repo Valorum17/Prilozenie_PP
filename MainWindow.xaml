@@ -1,0 +1,43 @@
+﻿<Window x:Class="Prilozenie_PP.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Prilozenie_PP"
+        mc:Ignorable="d"
+        Title="Дружок" Height="450" Width="800" WindowStyle="None">
+    <Grid>
+        <Image Source="image\LASKA2.png" Margin="66,74,394,71" Stretch="Fill"></Image>
+        <Label Margin="586,63,110,309" Content="Логин" FontSize="25"  HorizontalAlignment="Center" VerticalAlignment="Center" Width="96" Height="47" />
+        <TextBox x:Name="Login" Margin="501,135,25,272" Text="123" FontSize="18"/>
+        <Label Margin="586,171,99,201" Content="Пароль" FontSize="25"  HorizontalAlignment="Center" VerticalAlignment="Center" Height="47" Width="107" />
+        <PasswordBox x:Name="Password" Margin="501,230,25,178" PasswordChar="X" FontSize="18"/>
+
+        <CheckBox Margin="562,284,71,104" Content="Запомнить меня"  />
+        <Button x:Name="Enter" Margin="501,330,167,71" Content="Вход" Click="Enter_Click" />
+        <Button x:Name="Register" Margin="643,330,25,71" Content="Регистрация" Click="Register_Click"/>
+        <Button x:Name="Exit" Margin="749,10,0,394" Content="X" Click="Exit_Click" />
+        <Label Background="Pink" Margin="-9,-8,711,425"/>
+        <Label Background="PaleVioletRed" Margin="70,-8,632,425"/>
+        <Label Background="BlueViolet" Margin="149,-8,553,425"/>
+        <Label Background="Violet" Margin="229,-8,473,425"/>
+        <Label Background="Pink" Margin="310,-8,392,425"/>
+        <Label Background="PaleVioletRed" Margin="388,-8,314,425"/>
+        <Label Background="BlueViolet" Margin="468,-8,234,425"/>
+        <Label Background="Violet" Margin="548,-8,154,425"/>
+        <Label Background="PaleVioletRed" Margin="622,-8,80,425"/>
+        <Label Background="BlueViolet" Margin="702,-8,0,425"/>
+        <Label Background="Pink" Margin="-9,426,711,-9"/>
+        <Label Background="PaleVioletRed" Margin="70,426,632,-9"/>
+        <Label Background="BlueViolet" Margin="149,426,553,-9"/>
+        <Label Background="Violet" Margin="229,426,473,-9"/>
+        <Label Background="Pink" Margin="310,426,392,-9"/>
+        <Label Background="PaleVioletRed" Margin="388,426,314,-9"/>
+        <Label Background="BlueViolet" Margin="468,426,234,-9"/>
+        <Label Background="Violet" Margin="548,426,154,-9"/>
+        <Label Background="PaleVioletRed" Margin="622,426,80,-9"/>
+        <Label Background="BlueViolet" Margin="702,426,0,-9"/>
+
+
+    </Grid>
+</Window>
