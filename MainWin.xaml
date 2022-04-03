@@ -5,17 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Prilozenie_PP"
         mc:Ignorable="d"
-        Title="Дружок" Height="1080" Width="1920" WindowState="Maximized" >
+        Title="Дружок" Height="1080" Width="1920" WindowState="Maximized" WindowStyle="None" >
     <Grid>
-        <!--Починить фото ссылка робит но именно так нет-->
-        <Image Source="image\Laska logo.png" Margin="48,-48,1454,840"></Image>
-        <Image Source="image\Time2.png" Margin="522,25,1342,985" ></Image>
+        <!--Фото-->
+        <Image Source="image\Laska logo.png" Margin="48,0,1454,840"></Image>
+        <Image Source="image\Time2.png" Margin="573,58,1291,980" ></Image>
+        <Image Source="image\Phone.png" Margin="1385,58,479,980" ></Image>
         <!--вверхняя часть кнопки-->
-        <Label  Margin="48,155,48,893" Background="Gray"></Label>
-        <Label Margin="576,25,1146,985" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" Height="39" FontFamily="Arial" Width="190">C 10:00 до 21:00</Label>
 
-        <StackPanel Orientation="Horizontal" Margin="516,88,493,899">
-            <Button  Content="Услуги" Width="100" FontWeight="Bold" Background="White"  FontSize="20" BorderThickness="0" />
+        <Label  Margin="48,187,48,884" Background="Gray"></Label>
+        <Label Margin="627,58,1095,980" FontSize="20" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center" Height="34" FontFamily="Arial" Width="190">C 10:00 до 21:00</Label>
+        <Label Margin="1438,58,284,980" FontSize="20" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center" Height="34" FontFamily="Arial" Width="190" Foreground="#FFFFC1CD" >+7 495 792-39-71</Label>
+
+        <StackPanel Orientation="Horizontal" Margin="568,112,284,899">
+            <Button  Content="Услуги ↓" Width="100" FontWeight="Bold" Background="White"  FontSize="20" BorderThickness="0" />
             <Separator Width="50" Background="White"></Separator>
             <Button  Content="Сотруднки" Width="150" FontWeight="Bold" Background="White" FontSize="20" BorderThickness="0" />
             <Separator Width="50" Background="White"></Separator>
@@ -23,11 +26,43 @@
             <Separator Width="50" Background="White"></Separator>
             <Button  Content="Акции" Width="100" FontWeight="Bold" Background="White" FontSize="20" BorderThickness="0" />
             <Separator Width="50" Background="White"></Separator>
-
             <Button  x:Name="Exit" Content="Выход" Width="100" Click="Exit_Click" FontWeight="Bold" FontSize="20" Background="White" BorderThickness="0" />
             <Separator Width="50" Background="White"></Separator>
+            <Button  x:Name="LK" Content="Личный кабинет" Width="200"  FontWeight="Bold" FontSize="20" Background="White" BorderThickness="0" />
         </StackPanel>
-        <!--Тупо разметка какого то фига у меня при фул скрине нихуя не фулиться в право-->
 
+        <!--Под волшебной полосочкой-->
+        <Label Margin="1475,237,10,795" FontSize="17" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalAlignment="Center" Height="40" FontFamily="Arial" Width="427" Foreground="Black" >Когда нужно срочно обращаться в ветклинику:</Label>
+        <StackPanel Orientation="Vertical" Margin="1475,282,10,343">
+            <Label  Content="- Отказ от еды."  Background="White"  FontSize="20" BorderThickness="0" Margin="17,0,10,0" />
+            <Separator Width="50" Background="White"></Separator>
+            <Label  Content="- Вялость."  Background="White"  FontSize="20" BorderThickness="0" Margin="17,0,10,0" />
+            <Separator Width="50" Background="White"></Separator>
+            <Label  Content="- Диарея, запор, рвота."  Background="White"  FontSize="20" BorderThickness="0" Margin="17,0,10,0" />
+            <Separator Width="50" Background="White"></Separator>
+            <Label  Content="- Трудности с мочеиспусканием."  Background="White"  FontSize="20" BorderThickness="0" Margin="17,0,10,0" />
+            <Separator Width="50" Background="White"></Separator>
+            <Label  Content="- Выделения из носа, глаз."  Background="White"  FontSize="20" BorderThickness="0" Margin="17,0,10,0" />
+            <Separator Width="50" Background="White"></Separator>
+            <Label  Content="- Затруднение дыхания."  Background="White"  FontSize="20" BorderThickness="0" Margin="17,0,10,0" />
+            <Separator Width="50" Background="White"></Separator>
+            <Label  Content="- Опухоли, нарушение кожных покровов."  Background="White"  FontSize="20" BorderThickness="0" Margin="17,0,10,0" />
+            <Separator Width="50" Background="White"></Separator>
+            <Label  Content="- Кашель, чихание."  Background="White"  FontSize="20" BorderThickness="0" Margin="17,0,10,0" />
+            <Separator Width="50" Background="White"></Separator>
+            <Label  Content="- Изменение поведения."  Background="White"  FontSize="20" BorderThickness="0" Margin="17,0,10,0" />
+            <Separator Width="50" Background="White"></Separator>
+            <Label  Content="- Повышенная температура."  Background="White"  FontSize="20" BorderThickness="0" Margin="17,0,10,0" />
+
+
+        </StackPanel>
+
+        <Button Margin="48,232,1597,779" Content="Запись на прием" Background="White" BorderThickness="3" FontWeight="Bold" FontSize="20" BorderBrush="#FFFFC1CD"/>
+        <Button Margin="48,318,1597,692" Content="Вызов ветеринара" Background="White" BorderThickness="3" FontWeight="Bold" FontSize="20" BorderBrush="#FFFFC1CD"/>
+        <Label  Margin="48,406,1597,665" Background="Gray"></Label>
+        <!--Хочу жирный переключаемый баннер или слайдер как в павер поинте максимум 2-3 слайда-->
+        <Label Margin="366,237,442,276" Background="Black"></Label>
+        <Button Margin="1385,766,502,281" Background="White" BorderThickness="0" Content="←" Opacity="0.2"></Button>
+        <Button Margin="1438,766,449,281" Background="White" BorderThickness="0" Content="→" Opacity="0.2" ></Button>
     </Grid>
 </Window>
