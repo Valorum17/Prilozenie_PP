@@ -7,17 +7,22 @@
         mc:Ignorable="d"
         Title="Дружок" Height="1080" Width="1920" WindowState="Maximized" WindowStyle="None" >
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="21*"/>
+            <ColumnDefinition Width="65*"/>
+            <ColumnDefinition Width="392*"/>
+        </Grid.ColumnDefinitions>
         <!--Фото-->
-        <Image Source="image\Laska logo.png" Margin="48,0,1454,840"></Image>
-        <Image Source="image\Time2.png" Margin="573,58,1291,980" ></Image>
-        <Image Source="image\Phone.png" Margin="1385,58,479,980" ></Image>
+        <Image Source="image\Laska logo.png" Margin="48,0,1454,840" Grid.ColumnSpan="3"></Image>
+        <Image Source="image\Time2.png" Margin="229,58,1291,980" Grid.Column="2" ></Image>
+        <Image Source="image\Phone.png" Margin="1041,58,479,980" Grid.Column="2" ></Image>
         <!--вверхняя часть кнопки-->
 
-        <Label  Margin="48,187,48,884" Background="Gray"></Label>
-        <Label Margin="627,58,1095,980" FontSize="20" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center" Height="34" FontFamily="Arial" Width="190">C 10:00 до 21:00</Label>
-        <Label Margin="1438,58,284,980" FontSize="20" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center" Height="34" FontFamily="Arial" Width="190" Foreground="#FFFFC1CD" >+7 495 792-39-71</Label>
+        <Label  Margin="48,187,48,884" Background="Gray" Grid.ColumnSpan="3"></Label>
+        <Label Margin="283,58,1095,980" FontSize="20" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center" Height="34" FontFamily="Arial" Width="190" Grid.Column="2">C 10:00 до 21:00</Label>
+        <Label Margin="1094,58,284,980" FontSize="20" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center" Height="34" FontFamily="Arial" Width="190" Foreground="#FFFFC1CD" Grid.Column="2" >+7 495 792-39-71</Label>
 
-        <StackPanel Orientation="Horizontal" Margin="568,112,284,899">
+        <StackPanel Orientation="Horizontal" Margin="224,112,284,899" Grid.Column="2">
             <Button  Content="Услуги ↓" Width="100" FontWeight="Bold" Background="White"  FontSize="20" BorderThickness="0" />
             <Separator Width="50" Background="White"></Separator>
             <Button  Content="Сотруднки" Width="150" FontWeight="Bold" Background="White" FontSize="20" BorderThickness="0" />
@@ -32,9 +37,9 @@
         </StackPanel>
 
         <!--Под волшебной полосочкой-->
-        <Label Margin="1475,237,10,795" FontSize="17" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalAlignment="Center" Height="40" FontFamily="Arial" Width="427" Foreground="Black" >Когда нужно срочно обращаться в ветклинику:</Label>
-        <StackPanel Orientation="Vertical" Margin="1475,282,10,343">
-            <Label  Content="- Отказ от еды."  Background="White"  FontSize="20" BorderThickness="0" Margin="17,0,10,0" />
+        <Label Margin="1131,237,10,795" FontSize="17" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalAlignment="Center" Height="40" FontFamily="Arial" Width="427" Foreground="Black" Grid.Column="2" >Когда нужно срочно обращаться в ветклинику:</Label>
+        <StackPanel Visibility="Visible" Orientation="Vertical" Margin="1131,282,10,343" Grid.Column="2">
+            <Label  Content="- Отказ от еды."  Background="white"  FontSize="20" BorderThickness="0" Margin="17,0,10,0" />
             <Separator Width="50" Background="White"></Separator>
             <Label  Content="- Вялость."  Background="White"  FontSize="20" BorderThickness="0" Margin="17,0,10,0" />
             <Separator Width="50" Background="White"></Separator>
@@ -57,12 +62,12 @@
 
         </StackPanel>
 
-        <Button Margin="48,232,1597,779" Content="Запись на прием" Background="White" BorderThickness="3" FontWeight="Bold" FontSize="20" BorderBrush="#FFFFC1CD"/>
-        <Button Margin="48,318,1597,692" Content="Вызов ветеринара" Background="White" BorderThickness="3" FontWeight="Bold" FontSize="20" BorderBrush="#FFFFC1CD"/>
-        <Label  Margin="48,406,1597,665" Background="Gray"></Label>
+        <Button Margin="48,232,29,779" Content="Запись на прием" Background="White" BorderThickness="3" FontWeight="Bold" FontSize="20" BorderBrush="#FFFFC1CD" Grid.ColumnSpan="2"/>
+        <Button Margin="48,318,29,692" Content="Вызов ветеринара" Background="White" BorderThickness="3" FontWeight="Bold" FontSize="20" BorderBrush="#FFFFC1CD" Grid.ColumnSpan="2"/>
+        <Label  Margin="48,406,29,665" Background="Gray" Grid.ColumnSpan="2"></Label>
         <!--Хочу жирный переключаемый баннер или слайдер как в павер поинте максимум 2-3 слайда-->
-        <Label Margin="366,237,442,276" Background="Black"></Label>
-        <Button Margin="1385,766,502,281" Background="White" BorderThickness="0" Content="←" Opacity="0.2"></Button>
-        <Button Margin="1438,766,449,281" Background="White" BorderThickness="0" Content="→" Opacity="0.2" ></Button>
+        <Button x:Name="Button_1" Margin="1041,847,502,199" Background="White" BorderBrush="Black" BorderThickness="2" Content="←" Opacity="0.2" RenderTransformOrigin="0.56,3.32" Grid.Column="2" Click="Button_1_Click"/>
+        <Button x:Name="Button_2" Margin="1094,847,449,199" Background="White" BorderBrush="Black" BorderThickness="2" Content="→" Opacity="0.2" RenderTransformOrigin="0.6,1.32" Grid.Column="2" Click="Button_2_Click" />
+        <Image x:Name="SlideImage" Source="/image/Slide1.jpeg" Height="605" Margin="42,237,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="1077" Grid.Column="2"/>
     </Grid>
 </Window>
