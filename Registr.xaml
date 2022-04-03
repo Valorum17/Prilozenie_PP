@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="Registr" Height="800" Width="800" WindowStyle="None">
     <Grid>
+        <!--RGB Вверх-->
         <Label Background="Pink" Margin="-9,-8,711,768"></Label>
         <Label Background="PaleVioletRed" Margin="70,-8,632,768"></Label>
         <Label Background="BlueViolet" Margin="149,-8,553,768"></Label>
@@ -54,6 +55,8 @@
         <Button x:Name="ExitBack" Margin="548,707,62,26" Content="Вернуться" FontSize="20" Click="Exit_Click" />
         <Button x:Name="ExitBack1" Margin="84,707,526,26" Content="Регистрация" FontSize="20" Click="Exit_Click" Background="CadetBlue" Foreground="White" />
         <Label Background="Pink" Margin="-9,452,711,328"/>
+        
+        <!--RGB низ-->
         <Label Background="PaleVioletRed" Margin="70,452,632,328"/>
         <Label Background="BlueViolet" Margin="149,452,553,328"/>
         <Label Background="Violet" Margin="229,452,473,328"/>
