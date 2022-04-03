@@ -8,7 +8,7 @@
         Title="Дружок" Height="450" Width="800" WindowStyle="None">
     <Grid>
         <!--Починить фото ссылка робит но именно так нет-->
-        <Image Source="image\LASKA2.png" Margin="66,74,394,71" Stretch="Fill"></Image>
+        <Image Source="/image\LASKA2.png" Margin="66,74,394,71" Stretch="Fill"></Image>
         <Label Margin="586,63,110,309" Content="Логин" FontSize="25"  HorizontalAlignment="Center" VerticalAlignment="Center" Width="96" Height="47" />
         <TextBox x:Name="Login" Margin="501,135,25,272" Text="123" FontSize="18"/>
         <Label Margin="586,171,99,201" Content="Пароль" FontSize="25"  HorizontalAlignment="Center" VerticalAlignment="Center" Height="47" Width="107" />

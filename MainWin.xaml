@@ -5,72 +5,29 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Prilozenie_PP"
         mc:Ignorable="d"
-        Title="Дружок" Height="1080" Width="1980" WindowState="Maximized" >
+        Title="Дружок" Height="1080" Width="1920" WindowState="Maximized" >
     <Grid>
         <!--Починить фото ссылка робит но именно так нет-->
-        <Image Source="image\Laska logo.png" Margin="56,-18,1530,863"></Image>
-        <Image Source="image\time2.png" Margin="574,27,1348,983"></Image>
+        <Image Source="image\Laska logo.png" Margin="48,-48,1454,840"></Image>
+        <Image Source="image\Time2.png" Margin="522,25,1342,985" ></Image>
         <!--вверхняя часть кнопки-->
-        <Label Margin="629,27,1153,983" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" Height="39" FontFamily="Arial" Width="190">C 10:00 до 21:00</Label>
+        <Label  Margin="48,155,48,893" Background="Gray"></Label>
+        <Label Margin="576,25,1146,985" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" Height="39" FontFamily="Arial" Width="190">C 10:00 до 21:00</Label>
 
-        <StackPanel Orientation="Horizontal" Margin="574,90,503,931">
-            <Button  Content="Услуги" Margin="0,1,0,0" Width="100" />
+        <StackPanel Orientation="Horizontal" Margin="516,88,493,899">
+            <Button  Content="Услуги" Width="100" FontWeight="Bold" Background="White"  FontSize="20" BorderThickness="0" />
             <Separator Width="50" Background="White"></Separator>
-            <Button  Content="Сотруднки" Margin="0,1,0,0" Width="100" />
+            <Button  Content="Сотруднки" Width="150" FontWeight="Bold" Background="White" FontSize="20" BorderThickness="0" />
             <Separator Width="50" Background="White"></Separator>
-            <Button  Content="Контакты" Margin="0,1,0,0" Width="100" />
+            <Button  Content="Контакты" Width="150" FontWeight="Bold" Background="White" FontSize="20" BorderThickness="0" />
             <Separator Width="50" Background="White"></Separator>
-            <Button  Content="Акции" Margin="0,1,0,0" Width="100" />
+            <Button  Content="Акции" Width="100" FontWeight="Bold" Background="White" FontSize="20" BorderThickness="0" />
             <Separator Width="50" Background="White"></Separator>
 
-            <Button  x:Name="Exit" Content="Выход" Width="100" Click="Exit_Click" />
+            <Button  x:Name="Exit" Content="Выход" Width="100" Click="Exit_Click" FontWeight="Bold" FontSize="20" Background="White" BorderThickness="0" />
             <Separator Width="50" Background="White"></Separator>
         </StackPanel>
-        <Button HorizontalAlignment="Left"  VerticalAlignment="Top" Height="56" Width="56"  BorderThickness="0"  Foreground="White" Background="#FF121212"  Content="X"   Margin="1858,10,0,0" >
-            <Button.Template>
-                <ControlTemplate  TargetType="Button">
-                    <Grid>
-                        <Ellipse Fill="Salmon" ></Ellipse>
-                        <Label Content="{TemplateBinding Content}" HorizontalAlignment="Center"
-                               VerticalAlignment="Center"></Label>
-                    </Grid>
-                </ControlTemplate>
-            </Button.Template>
-        </Button>
         <!--Тупо разметка какого то фига у меня при фул скрине нихуя не фулиться в право-->
-        <Button HorizontalAlignment="Left"  VerticalAlignment="Top" Height="56" Width="56"  BorderThickness="0"  Foreground="White" Background="#FF121212"  Content="X"   Margin="1858,993,0,0" >
-            <Button.Template>
-                <ControlTemplate  TargetType="{x:Type Button}">
-                    <Grid>
-                        <Ellipse Fill="Salmon" />
-                        <Label Content="{TemplateBinding Content}" HorizontalAlignment="Center"
-                            VerticalAlignment="Center"/>
-                    </Grid>
-                </ControlTemplate>
-            </Button.Template>
-        </Button>
-        <Button HorizontalAlignment="Left"  VerticalAlignment="Top" Height="56" Width="56"  BorderThickness="0"  Foreground="White" Background="#FF121212"  Content="X"   Margin="10,10,0,0" >
-            <Button.Template>
-                <ControlTemplate  TargetType="{x:Type Button}">
-                    <Grid>
-                        <Ellipse Fill="Salmon" />
-                        <Label Content="{TemplateBinding Content}" HorizontalAlignment="Center"
-                            VerticalAlignment="Center"/>
-                    </Grid>
-                </ControlTemplate>
-            </Button.Template>
-        </Button>
-        <Button HorizontalAlignment="Left"  VerticalAlignment="Top" Height="56" Width="56"  BorderThickness="0"  Foreground="White" Background="#FF121212"  Content="X"   Margin="10,993,0,0" >
-            <Button.Template>
-                <ControlTemplate  TargetType="{x:Type Button}">
-                    <Grid>
-                        <Ellipse Fill="Salmon" />
-                        <Label Content="{TemplateBinding Content}" HorizontalAlignment="Center"
-                            VerticalAlignment="Center"/>
-                    </Grid>
-                </ControlTemplate>
-            </Button.Template>
-        </Button>
 
     </Grid>
 </Window>

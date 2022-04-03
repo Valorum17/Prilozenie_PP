@@ -109,7 +109,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="image\" />
+    <Resource Include="image\Time2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\big-chungus-hd.png" />
+    <Resource Include="image\Laska logo.png" />
+    <Resource Include="image\LASKA2.png" />
+    <Resource Include="Time2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
