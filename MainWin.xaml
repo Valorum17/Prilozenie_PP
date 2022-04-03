@@ -7,28 +7,23 @@
         mc:Ignorable="d"
         Title="Дружок" Height="1080" Width="1980" WindowState="Maximized" >
     <Grid>
-
+        <!--Починить фото ссылка робит но именно так нет-->
+        <Image Source="image\Laska logo.png" Margin="56,-18,1530,863"> </Image>
         
         <!--Левая часть кнопки-->
-        <StackPanel Orientation="Vertical" Margin="10,94,1765,230">
-            <Button x:Name="LK"  Content="Личный кабинет" Height="50" Click="LK_Click">
-                
-            </Button>
-            <Separator Height="50" Background="White"></Separator>
-            <Button  Content="Личный кабинет" Height="50" />
-            <Separator Height="50" Background="White"></Separator>
-            <Button  Content="Личный кабинет" Height="50" />
-            <Separator Height="50" Background="White"></Separator>
-            <Button  Content="Личный кабинет" Height="50" />
-            <Separator Height="50" Background="White"></Separator>
-            <Button  Content="Личный кабинет" Height="50" />
-            <Separator Height="50" Background="White"></Separator>
-            <Button  Content="Личный кабинет" Height="50" />
-            <Separator Height="50" Background="White"></Separator>
-            <Button  Content="Личный кабинет" Height="50" />
-            <Separator Height="50" Background="White"></Separator>
-            
-
+        <StackPanel Orientation="Horizontal" Margin="574,90,503,931">
+           
+            <Button  Content="Услуги" Margin="0,1,0,0" Width="100" />
+            <Separator Width="50" Background="White"></Separator>
+            <Button  Content="Сотруднки" Margin="0,1,0,0" Width="100" />
+            <Separator Width="50" Background="White"></Separator>
+            <Button  Content="Контакты" Margin="0,1,0,0" Width="100" />
+            <Separator Width="50" Background="White"></Separator>
+            <Button  Content="Акции" Margin="0,1,0,0" Width="100" />
+            <Separator Width="50" Background="White"></Separator>
+           
+            <Button  x:Name="Exit" Content="Выход" Width="100" Click="Exit_Click" />
+            <Separator Width="50" Background="White"></Separator>
         </StackPanel>
         <Button HorizontalAlignment="Left"  VerticalAlignment="Top" Height="56" Width="56"  BorderThickness="0"  Foreground="White" Background="#FF121212"  Content="X"   Margin="1858,10,0,0" >
             <Button.Template>
@@ -75,6 +70,6 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        
+
     </Grid>
 </Window>

@@ -23,9 +23,16 @@ namespace Prilozenie_PP
         {
             InitializeComponent();
         }
-
+        //Надо личный ебануть "Рома харош ебланить" 
         private void LK_Click(object sender, RoutedEventArgs e)
         {
+            this.Close();
+        }
+
+        private void Exit_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow taskWindow = new MainWindow();
+            taskWindow.Show();
             this.Close();
         }
     }
