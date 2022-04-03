@@ -8,11 +8,12 @@
         Title="Дружок" Height="1080" Width="1980" WindowState="Maximized" >
     <Grid>
         <!--Починить фото ссылка робит но именно так нет-->
-        <Image Source="image\Laska logo.png" Margin="56,-18,1530,863"> </Image>
-        
-        <!--Левая часть кнопки-->
+        <Image Source="image\Laska logo.png" Margin="56,-18,1530,863"></Image>
+        <Image Source="image\time2.png" Margin="574,27,1348,983"></Image>
+        <!--вверхняя часть кнопки-->
+        <Label Margin="629,27,1153,983" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" Height="39" FontFamily="Arial" Width="190">C 10:00 до 21:00</Label>
+
         <StackPanel Orientation="Horizontal" Margin="574,90,503,931">
-           
             <Button  Content="Услуги" Margin="0,1,0,0" Width="100" />
             <Separator Width="50" Background="White"></Separator>
             <Button  Content="Сотруднки" Margin="0,1,0,0" Width="100" />
@@ -21,7 +22,7 @@
             <Separator Width="50" Background="White"></Separator>
             <Button  Content="Акции" Margin="0,1,0,0" Width="100" />
             <Separator Width="50" Background="White"></Separator>
-           
+
             <Button  x:Name="Exit" Content="Выход" Width="100" Click="Exit_Click" />
             <Separator Width="50" Background="White"></Separator>
         </StackPanel>
