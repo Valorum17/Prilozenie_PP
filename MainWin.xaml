@@ -11,16 +11,8 @@
         
         <!--Левая часть кнопки-->
         <StackPanel Orientation="Vertical" Margin="10,94,1765,230">
-            <Button x:Name="LK"  Content="Личный кабинет" Height="100" Click="LK_Click">
-                <Button.Template>
-                    <ControlTemplate  TargetType="{x:Type Button}">
-                        <Grid>
-                            <Ellipse Fill="Salmon" />
-                            <Label Content="{TemplateBinding Content}" HorizontalAlignment="Center"
-                            VerticalAlignment="Center"/>
-                        </Grid>
-                    </ControlTemplate>
-                </Button.Template>
+            <Button x:Name="LK"  Content="Личный кабинет" Height="50" Click="LK_Click">
+                
             </Button>
             <Separator Height="50" Background="White"></Separator>
             <Button  Content="Личный кабинет" Height="50" />
@@ -49,7 +41,7 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <!--Тупо разметка-->
+        <!--Тупо разметка какого то фига у меня при фул скрине нихуя не фулиться в право-->
         <Button HorizontalAlignment="Left"  VerticalAlignment="Top" Height="56" Width="56"  BorderThickness="0"  Foreground="White" Background="#FF121212"  Content="X"   Margin="1858,993,0,0" >
             <Button.Template>
                 <ControlTemplate  TargetType="{x:Type Button}">
